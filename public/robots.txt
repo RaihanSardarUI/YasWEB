@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yasdownload.pro/sitemap.xml
+
+# Crawl-delay (optional - helps prevent overloading your server)
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block access to admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_astro/
+
+# Allow access to important pages
+Allow: /
+Allow: /get
+Allow: /blog
+Allow: /success
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Allow: /disclaimer
+Allow: /cookie-policy
