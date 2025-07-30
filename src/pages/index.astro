@@ -1,0 +1,625 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.svelte';
+import Hero from '../components/Hero.svelte';
+import AboutSection from '../components/AboutSection.svelte';
+import Features from '../components/Features.svelte';
+import Footer from '../components/Footer.svelte';
+import FAQ from '../components/FAQ.svelte';
+import PlatformIcons from '../components/PlatformIcons.svelte';
+import HowItWorks from '../components/HowItWorks.svelte';
+import DownloadSection from '../components/DownloadSection.svelte';
+import InstallationGuide from '../components/InstallationGuide.svelte';
+import SectionBadge from '../components/SectionBadge.svelte';
+import { yasDownload } from '../data/shortcuts.js';
+---
+
+<Layout title="YasDownload.Pro - The Ultimate iOS Content Downloader">
+  <Navigation client:load />
+  
+  <main class="pt-16">
+    <!-- Hero Section - Mobile Optimized -->
+    <section class="hero min-h-screen hero-modern">
+      <div class="hero-content text-center px-4">
+        <div class="max-w-4xl w-full">
+          <!-- Modern Hero Card -->
+          <div class="card bg-base-100/90 backdrop-blur-2xl shadow-2xl border border-base-300/20 cv-static">
+            <div class="card-body p-4 sm:p-6 lg:p-12">
+              <!-- App Icon with Enhanced Effects -->
+              <div class="mb-6 sm:mb-8">
+                <!-- Main Icon -->
+                <div class="avatar mb-4">
+                  <div class="w-24 sm:w-32 rounded-2xl sm:rounded-3xl shadow-2xl ring-2 sm:ring-4 ring-primary/20 ring-offset-2 sm:ring-offset-4 ring-offset-base-100">
+                    <img src="/Yas Download.png" alt="Yas Download" class="rounded-2xl sm:rounded-3xl" />
+                  </div>
+                </div>
+                
+                <!-- Organized Badges -->
+                <div class="flex flex-wrap justify-center gap-2">
+                  <div class="badge badge-success gap-1 text-xs sm:text-sm">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
+                    </svg>
+                    Free
+                  </div>
+                  <div class="badge badge-info gap-1 text-xs sm:text-sm">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    v{yasDownload.version}
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Main Title with Enhanced Typography -->
+              <div class="mb-4 sm:mb-6">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-3 sm:mb-4 leading-tight">
+                  <span class="gradient-text bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                    Yas Download
+                  </span>
+                </h1>
+                <div class="flex justify-center items-center gap-2 mb-3 sm:mb-4">
+                  <div class="w-8 sm:w-16 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+                  <div class="badge badge-primary badge-outline text-xs sm:text-sm">iOS Shortcut</div>
+                  <div class="w-8 sm:w-16 h-1 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
+                </div>
+              </div>
+              
+              <!-- Enhanced Subtitle -->
+              <div class="mb-6 sm:mb-8">
+                <p class="text-base sm:text-lg lg:text-xl text-base-content/80 max-w-3xl mx-auto leading-relaxed mb-4 sm:mb-6 px-2">
+                  Welcome to the official website of YAS Download. The Best Video Downloader For iPhone Users. Implement this fantastic tool to download content from any social media Instagram, YT, TikTok, and more.
+                </p>
+                
+                <!-- Feature Highlights -->
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-4 sm:mb-6 px-2">
+                  <div class="badge badge-success gap-1 sm:gap-2 text-xs sm:text-sm">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    No Watermarks
+                  </div>
+                  <div class="badge badge-info gap-1 sm:gap-2 text-xs sm:text-sm">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                    Lightning Fast
+                  </div>
+                  <div class="badge badge-warning gap-1 sm:gap-2 text-xs sm:text-sm">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                    7+ Platforms
+                  </div>
+                  <div class="badge badge-error gap-1 sm:gap-2 text-xs sm:text-sm">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    100% Safe
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Enhanced CTA Buttons -->
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
+                <a href="#get-shortcut-btn" class="btn btn-primary btn-md sm:btn-lg btn-glow gap-2 shadow-2xl hover:shadow-primary/25 transition-shadow duration-300 w-full sm:w-auto">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                  Get Now
+                  <div class="badge badge-success badge-sm">Free</div>
+                </a>
+                
+                <a href="#about" class="btn btn-outline btn-md sm:btn-lg gap-2 hover:btn-primary transition-colors duration-300 w-full sm:w-auto">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Learn More
+                </a>
+              </div>
+              
+              <!-- Trust Indicators -->
+              <div class="mt-6 sm:mt-8 px-2">
+                <div class="stats stats-vertical sm:stats-horizontal shadow-xl bg-base-200/50 backdrop-blur-lg border border-base-300/20 w-full">
+                  <div class="stat text-center">
+                    <div class="stat-figure text-primary">
+                      <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <div class="stat-title text-xs sm:text-sm">Downloads</div>
+                    <div class="stat-value text-primary text-lg sm:text-2xl">1M+</div>
+                    <div class="stat-desc text-xs">Trusted Users</div>
+                  </div>
+                  
+                  <div class="stat text-center">
+                    <div class="stat-figure text-secondary">
+                      <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div class="stat-title text-xs sm:text-sm">Success Rate</div>
+                    <div class="stat-value text-secondary text-lg sm:text-2xl">99%</div>
+                    <div class="stat-desc text-xs">Reliability</div>
+                  </div>
+                  
+                  <div class="stat text-center">
+                    <div class="stat-figure text-accent">
+                      <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                    <div class="stat-title text-xs sm:text-sm">Platforms</div>
+                    <div class="stat-value text-accent text-lg sm:text-2xl">7+</div>
+                    <div class="stat-desc text-xs">Supported</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Content -->
+    <section class="py-20 bg-base-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none text-base-content leading-relaxed space-y-6">
+          <p class="text-lg">
+            Are you looking to download videos, music, or images onto your iPhone device without using third-party websites? You've reached the right place!
+          </p>
+          
+          <p>
+            Now, has anyone imagined why I said to avoid third-party websites? Many people suggest using third-party websites to download content onto an iPhone, but in reality, they are just misleading you to get the right thing. How?
+          </p>
+          
+          <p>
+            Listen, using an unknown website means sharing your personal information with that site because they're unofficial and can be harmful. So, "what should you have to do as an iPhone user?
+          </p>
+          
+          <p>
+            Well, you don't have to make yourself uncomfortable because YAS Download has got you covered! Now, if you're thinking "What is YAS Download" Let me introduce you to this wonderful Shortcut!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Yas Download -->
+    <section class="py-20 bg-base-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            About <span class="gradient-text">Yas Download</span>
+          </h2>
+        </div>
+
+        <div class="prose prose-lg max-w-none text-base-content leading-relaxed space-y-6 mb-12">
+          <p>
+            <strong class="text-primary">YAS Download</strong> is a popular shortcut for iPhone users that allows them to download any content from social media platforms like Instagram, TikTok, Twitter, and more. This amazing Shortcut was developed by <strong class="text-secondary">"Yas8p"</strong>.
+          </p>
+          
+          <p>
+            Moreover, Yas has overcome many issues that usually iPhone users face while downloading something which is they're not allowed to save any content from social media into their iPhone gallery which is ridiculous.
+          </p>
+          
+          <p>
+            But after installing YAS Download Shortcut you're no longer facing this issue. In simple words, we can describe that your dream of downloading files into your iPhone from social media is accessible through this shortcut.
+          </p>
+          
+          <p>
+            Thanks to this wonderful tool it is really impressive.
+          </p>
+        </div>
+
+        <!-- YAS Download Image -->
+        <div class="text-center mb-16">
+          <div class="card card-body bg-base-100 shadow-xl max-w-2xl mx-auto">
+            <img src="/Yas Download.png" alt="YAS Download" class="w-48 h-48 mx-auto rounded-2xl shadow-lg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Prospects -->
+    <section class="py-20 bg-base-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            Important Prospects of <span class="gradient-text">Yas Download</span>
+          </h2>
+          <p class="text-xl text-base-content/70">
+            Below are some crucial prospects of <strong>YAS Download</strong> that can help you understand this tool better. Let's discuss it together!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          <div class="card card-body bg-success/10 border border-success/20 p-4">
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-success rounded-full mr-3 flex-shrink-0"></div>
+              <span class="font-medium text-sm sm:text-base">You Can Download High-Quality Videos With It</span>
+            </div>
+          </div>
+          
+          <div class="card card-body bg-info/10 border border-info/20 p-4">
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-info rounded-full mr-3 flex-shrink-0"></div>
+              <span class="font-medium text-sm sm:text-base">YT and Instagram Downloading Is Fixed</span>
+            </div>
+          </div>
+          
+          <div class="card card-body bg-warning/10 border border-warning/20 p-4">
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-warning rounded-full mr-3 flex-shrink-0"></div>
+              <span class="font-medium text-sm sm:text-base">Fast Downloading Speed From Any Social Media Platform</span>
+            </div>
+          </div>
+          
+          <div class="card card-body bg-error/10 border border-error/20 p-4">
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-error rounded-full mr-3 flex-shrink-0"></div>
+              <span class="font-medium text-sm sm:text-base">You can Download TikTok Videos Without a Watermark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Crucial Features -->
+    <section class="py-20 bg-base-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            Crucial Features To Prefer In <span class="gradient-text">YAS Shortcut</span>
+          </h2>
+          <p class="text-xl text-base-content/70 max-w-4xl mx-auto mb-4">
+            YAS Download Shortcut has changed the concept of downloading content from social media for iPhone users which is a great thing but what makes this application one of the best for us?
+          </p>
+          <p class="text-lg text-base-content/60 max-w-4xl mx-auto">
+            The quick answer is its valuable features, which are workable for almost every iOS user, whether using an iPhone or iPad device. Here are some of them!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <!-- Feature 1 -->
+          <div class="feature-card card-body text-center p-4 sm:p-6">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-primary/10 rounded-xl sm:rounded-2xl flex items-center justify-center">
+              <span class="text-2xl sm:text-4xl">😊</span>
+            </div>
+            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-base-content mb-3 sm:mb-4 leading-tight">Multiple Social Platforms Accessibility</h3>
+            <p class="text-base-content/70 leading-relaxed mb-4">
+              This feature of Yas download is considered one of the best features because it provides flexibility to the users so that they can save their desired content from multiple social platforms without any hassle.
+            </p>
+            <p class="text-base-content/70 leading-relaxed">
+              After going through an easy downloading process, you can also browse that particular content into your iPhone gallery for later viewing.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card card-body text-center p-4 sm:p-6">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-secondary/10 rounded-xl sm:rounded-2xl flex items-center justify-center">
+              <span class="text-2xl sm:text-4xl">🚫</span>
+            </div>
+            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-base-content mb-3 sm:mb-4 leading-tight">Download Videos Free of Watermark</h3>
+            <p class="text-base-content/70 leading-relaxed mb-4">
+              This feature of Yas shortcut helps you download videos from social media without any watermark on it. Watermark is really an annoying thing because it disturbs the overall look of the content.
+            </p>
+            <p class="text-base-content/70 leading-relaxed">
+              Thanks to this Shortcut because it can remove the watermark from videos while maintaining its quality makes the file look professional and clear.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card card-body text-center p-4 sm:p-6">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center">
+              <span class="text-2xl sm:text-4xl">⚡</span>
+            </div>
+            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-base-content mb-3 sm:mb-4 leading-tight">Superb Downloading Speed</h3>
+            <p class="text-base-content/70 leading-relaxed mb-4">
+              Yas Download provides users with an impactful downloading speed that can help them download large files from multiple platforms easily.
+            </p>
+            <p class="text-base-content/70 leading-relaxed">
+              Not only this it also ensures users that the content they're downloading, whatever size of the file is, the quality of the content remains the same which makes this feature one of the best.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card card-body text-center p-4 sm:p-6">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-info/10 rounded-xl sm:rounded-2xl flex items-center justify-center">
+              <span class="text-2xl sm:text-4xl">📱</span>
+            </div>
+            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-base-content mb-3 sm:mb-4 leading-tight">Friendly User Interface</h3>
+            <p class="text-base-content/70 leading-relaxed mb-4">
+              The user interface is the main feature of any application because it helps users navigate the tool easily. Same case in Yas shortcut it has a friendly user interface that can be usable by almost every IOS user.
+            </p>
+            <p class="text-base-content/70 leading-relaxed">
+              It really doesn't matter how educated you are. Just follow the easy steps and download any information in just a few clicks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add YAS Download -->
+    <section id="dn" class="py-20 bg-base-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            Add <span class="gradient-text">YAS Download</span>
+          </h2>
+          <div class="prose prose-lg max-w-none text-base-content/70 leading-relaxed space-y-4">
+            <p>
+              Hope whatever we discuss till now will be beneficial for our audience. Now this section is very important because here you will be able to get the downloading link of this amazing application.
+            </p>
+            <p>
+              Before moving ahead, as we focused on providing valuable information for our potential audience we've arranged the content into the form of a table below to make things more clear for you.
+            </p>
+            <p>
+              In the table, you'll see some basic information about this tool like its version, size, or developer name but if you focus on the middle of the table you can see a "Go To Shortcuts Page" button just click on this button and you will be redirected to its link section.
+            </p>
+          </div>
+        </div>
+
+        <!-- App Icon -->
+        <div class="text-center mb-8 ig">
+          <div class="avatar">
+            <div class="w-24 rounded-2xl shadow-xl">
+              <img src="/Yas Download.png" alt="Yas Download" />
+            </div>
+          </div>
+        </div>
+
+        <!-- App Info Table -->
+        <div class="card card-body bg-base-200 shadow-xl mb-8">
+          <div class="overflow-x-auto">
+            <table class="table table-zebra w-full">
+              <tbody>
+                <tr>
+                  <td class="font-semibold">Name</td>
+                  <td><a href={yasDownload.websiteUrl} class="link link-primary">{yasDownload.name}</a></td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Version</td>
+                  <td>{yasDownload.version}</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">iOS</td>
+                  <td>{yasDownload.iosVersions}</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Developer</td>
+                  <td>{yasDownload.developer}</td>
+                </tr>
+                <tr>
+                  <td class="font-semibold">Updated On</td>
+                  <td>{yasDownload.updateDate}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Download Button -->
+        <div id="get-shortcut-btn" class="text-center bt py-8" style="scroll-margin-top: 100px;">
+          <a href="/get" class="btn btn-primary btn-lg btn-glow gap-3 shadow-xl hover:shadow-2xl transition-all duration-300">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            Get Shortcut
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="py-20 bg-base-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            <span class="gradient-text">Screenshots</span>
+          </h2>
+          <div class="prose prose-lg max-w-none text-base-content/70 leading-relaxed space-y-4">
+            <p>
+              As we discussed YAS Download and its valuable features this section will display some visuals of this tool that help you recognize its functions better. Remember that imagination doesn't relate to reality, which means things will never remain the same as we imagined them to be.
+            </p>
+            <p>
+              That's the main reason for showing visuals (screenshots) of this tool. Hope it will help you!
+            </p>
+          </div>
+        </div>
+
+        <!-- Screenshot placeholder -->
+        <div class="text-center">
+          <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1 bg-base-300">
+                <div class="p-4 space-y-4">
+                  <div class="card card-compact bg-primary shadow-xl">
+                    <div class="card-body items-center text-center">
+                      <div class="avatar">
+                        <div class="w-16 rounded-xl">
+                          <img src="/Yas Download.png" alt="YAS Download" />
+                        </div>
+                      </div>
+                      <h3 class="card-title text-primary-content">YAS Download</h3>
+                      <p class="text-primary-content/80">iOS Shortcut</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation Procedure -->
+    <InstallationGuide client:load />
+
+    <!-- Implementation Guide -->
+    <section class="py-20 bg-base-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            Implementation of <span class="gradient-text">Yas Shortcut</span> In iOS
+          </h2>
+          <div class="prose prose-lg max-w-none text-base-content/70 leading-relaxed space-y-4">
+            <p>
+              Yas has established its presence due to its amazing features in the market that help iPhone users download content efficiently.
+            </p>
+            <p>
+              Let's have a look at how it can assist users in the form of a step-by-step guide!
+            </p>
+          </div>
+        </div>
+
+        <HowItWorks client:load />
+      </div>
+    </section>
+
+    <!-- Supported Platforms -->
+    <section class="py-20 bg-base-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            What Social Platforms Does <span class="gradient-text">Yas Shortcut</span> Prefer The Most?
+          </h2>
+          <div class="prose prose-lg max-w-none text-base-content/70 leading-relaxed space-y-4">
+            <p>
+              We analyze the usage and features of Yas Download in a detailed manner but one thing that can never be forgettable about this tool is its social media compatibility which can impact the whole tool if it's not working.
+            </p>
+            <p>
+              Well, this shortcut supports a range of social media platforms which include:
+            </p>
+          </div>
+        </div>
+
+        <PlatformIcons client:load />
+
+        <div class="text-center mt-12">
+          <p class="text-base-content/70 max-w-3xl mx-auto">
+            You can choose any social platform to download your favorite content onto your iPhone device whether it would be an image, video, or music. Yas has covered the whole thing except "Snapchat" but soon it will recover and you'll also download content from there.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages & Disadvantages -->
+    <section class="py-20 bg-base-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Advantages -->
+          <div>
+            <h2 class="text-3xl font-bold text-base-content mb-8 text-center">
+              <span class="text-success">Advantages</span> of Yas Download
+            </h2>
+            <div class="space-y-4">
+              <div class="card card-body bg-success/10 border border-success/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                  <span>Download High-Quality Videos</span>
+                </div>
+              </div>
+              <div class="card card-body bg-success/10 border border-success/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                  <span>There's no sign of any watermark on downloaded videos</span>
+                </div>
+              </div>
+              <div class="card card-body bg-success/10 border border-success/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                  <span>Quick downloading speed while maintaining content quality</span>
+                </div>
+              </div>
+              <div class="card card-body bg-success/10 border border-success/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                  <span>Ads Free interface</span>
+                </div>
+              </div>
+              <div class="card card-body bg-success/10 border border-success/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                  <span>Simple and Free To Download</span>
+                </div>
+              </div>
+              <div class="card card-body bg-success/10 border border-success/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                  <span>Promote all updated versions of IOS (13,14, 15, 16, and 17)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Disadvantages -->
+          <div>
+            <h2 class="text-3xl font-bold text-base-content mb-8 text-center">
+              <span class="text-error">Disadvantages</span> of Yas Download
+            </h2>
+            <div class="prose prose-lg text-base-content/70 mb-6">
+              <p>
+                Well, this Shortcut is totally useful but as a responsible mentor, it's our responsibility to provide you with every single thing about the tool.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div class="card card-body bg-error/10 border border-error/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-error rounded-full mr-3"></div>
+                  <span>This Shortcut is not openly workable</span>
+                </div>
+              </div>
+              <div class="card card-body bg-error/10 border border-error/20">
+                <div class="flex items-center">
+                  <div class="w-3 h-3 bg-error rounded-full mr-3"></div>
+                  <span>It's update is quite complicated and frustrating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-base-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            <span class="gradient-text">FAQs</span>
+          </h2>
+        </div>
+        
+        <FAQ client:load />
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="py-20 bg-base-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-base-content mb-6">
+            <span class="gradient-text">Conclusion</span>
+          </h2>
+        </div>
+
+        <div class="prose prose-lg max-w-none text-base-content leading-relaxed space-y-6">
+          <p>
+            I don't want to end this, but it's my responsibility to share with you my personal experience using this Shortcut. This tool is one of the best software I have ever seen because it not only provides you the flexibility to download content from multiple social platforms but also focuses on the quality of the file you desire to save into your iPhone gallery.
+          </p>
+          
+          <p>
+            I personally recommend iPhone users employ this tool and enhance their IOS experience to the next level. That's it!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

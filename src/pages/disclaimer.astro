@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.svelte';
+import Footer from '../components/Footer.svelte';
+---
+
+<Layout title="Disclaimer - YasDownload.Pro">
+  <Navigation client:load />
+  
+  <main class="min-h-screen bg-base-100 py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto prose prose-invert">
+        <h1 class="text-5xl font-bold mb-8">Disclaimer</h1>
+        
+        <div class="bg-base-200 p-8 rounded-lg">
+          <p>If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at <strong>contact@yasdownload.pro</strong>.</p>
+          
+          <h2>Disclaimers for YasDownload.Pro</h2>
+          
+          <p>All the information on this website - <strong>https://yasdownload.pro</strong> - is published in good faith and for general information purpose only. YasDownload.Pro does not make any warranties about the completeness, reliability and accuracy of this information.</p>
+          
+          <h2>Content Disclaimer</h2>
+          
+          <p>The shortcuts and tools provided on this website are for educational and personal use only. Users are responsible for ensuring they comply with the terms of service of the platforms they download content from.</p>
+          
+          <h2>Copyright Notice</h2>
+          
+          <p>YasDownload.Pro respects intellectual property rights. Users should only download content they have the right to download or content that is freely available for download.</p>
+          
+          <h2>Third-Party Links</h2>
+          
+          <p>Our website may contain links to third-party websites. These links are provided for convenience only. We do not endorse or take responsibility for the content of these external sites.</p>
+          
+          <h2>Software Disclaimer</h2>
+          
+          <p>The iOS shortcuts provided are offered "as is" without warranty of any kind. We do not guarantee that the shortcuts will work on all devices or iOS versions.</p>
+          
+          <h2>Limitation of Liability</h2>
+          
+          <p>In no event shall YasDownload.Pro be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the service or the contents of the service.</p>
+          
+          <h2>Updates</h2>
+          
+          <p>This disclaimer may be updated from time to time. Please check this page regularly for any changes.</p>
+          
+          <p class="text-sm text-gray-500 mt-8">Last updated: January 2024</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

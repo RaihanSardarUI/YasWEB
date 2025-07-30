@@ -1,0 +1,35 @@
+---
+import '../styles/global.css'
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "YasDownload.Pro - Download iOS shortcuts and tools" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="yasdownload">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Additional meta tags for better SEO -->
+    <meta name="theme-color" content="#efc902" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  </head>
+  <body class="bg-base-100 text-base-content antialiased">
+    <slot />
+  </body>
+</html>
