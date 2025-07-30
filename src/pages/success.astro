@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { yasDownload } from '../data/shortcuts.js';
+import { yasDownload, dinstagram } from '../data/shortcuts.js';
 ---
 
 <Layout title="Download Successful - YasDownload.Pro" description="Your video has been successfully downloaded! Thank you for using YAS Download shortcut.">
@@ -61,7 +61,7 @@ import { yasDownload } from '../data/shortcuts.js';
           
           <!-- Instagram Shortcut Button -->
           <div class="instagram-shortcut">
-            <a href="https://www.icloud.com/shortcuts/your-dinsta-shortcut-id" target="_blank" rel="noopener noreferrer" class="instagram-btn">
+            <a href={dinstagram.shortcutUrl} target="_blank" rel="noopener noreferrer" class="instagram-btn">
               <span class="instagram-icon">📸</span>
               <div class="instagram-text">
                 <div class="instagram-title">Try DInstagram Shortcut</div>
