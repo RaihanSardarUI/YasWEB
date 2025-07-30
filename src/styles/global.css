@@ -484,6 +484,61 @@ ed Hero section */
   pointer-events: none;
 }
 
+/* Accessibility improvements - Better contrast */
+.text-secondary {
+  color: #1e40af !important; /* Darker blue for better contrast */
+}
+
+.text-success {
+  color: #166534 !important; /* Darker green for better contrast */
+}
+
+.text-error {
+  color: #dc2626 !important; /* Darker red for better contrast */
+}
+
+/* Enhanced contrast for specific sections */
+.bg-base-200 .text-secondary {
+  color: #1e3a8a !important; /* Even darker blue on light backgrounds */
+}
+
+.bg-base-100 .text-success {
+  color: #14532d !important; /* Even darker green on light backgrounds */
+}
+
+.bg-base-100 .text-error {
+  color: #b91c1c !important; /* Even darker red on light backgrounds */
+}
+
+/* Focus states for better accessibility */
+input:focus,
+button:focus,
+a:focus {
+  outline: 2px solid #efc902;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .text-secondary {
+    color: #1e3a8a !important;
+  }
+  
+  .text-success {
+    color: #14532d !important;
+  }
+  
+  .text-error {
+    color: #991b1b !important;
+  }
+  
+  .gradient-text {
+    background: none !important;
+    color: #efc902 !important;
+    -webkit-text-fill-color: unset !important;
+  }
+}
+
 /* Enhanced CV card styling */
 .cv {
   position: relative;

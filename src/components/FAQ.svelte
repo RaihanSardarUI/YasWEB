@@ -38,8 +38,8 @@
 <div class="space-y-4">
   {#each faqs as faq, index}
     <div class="collapse collapse-plus card-glass shadow-xl border border-base-300/20 hover:border-primary/30 transition-all duration-300">
-      <input type="radio" name="faq-accordion" />
-      <div class="collapse-title text-lg font-semibold">
+      <input type="radio" name="faq-accordion" id="faq-{index}" aria-label="FAQ: {faq.question}" />
+      <label for="faq-{index}" class="collapse-title text-lg font-semibold cursor-pointer">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3">
             <div class="p-2 rounded-lg bg-primary/10">
@@ -49,7 +49,7 @@
           </div>
           <div class="badge badge-primary badge-outline">{faq.badge}</div>
         </div>
-      </div>
+      </label>
       <div class="collapse-content">
         <div class="pt-4 pb-2">
           <div class="alert alert-info shadow-lg">
