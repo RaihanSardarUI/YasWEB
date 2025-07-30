@@ -109,6 +109,13 @@ import { yasDownload } from '../data/shortcuts.js';
             <div class="btn-subtitle">Return to main page</div>
           </div>
         </a>
+        <a href="fb://profile" class="action-btn facebook-btn">
+          <span class="btn-icon">📘</span>
+          <div class="btn-content">
+            <div class="btn-title">Open Facebook</div>
+            <div class="btn-subtitle">Launch Facebook app</div>
+          </div>
+        </a>
         <a href={yasDownload.shortcutUrl} target="_blank" rel="noopener noreferrer" class="action-btn download-btn">
           <span class="btn-icon">⬇️</span>
           <div class="btn-content">
@@ -435,6 +442,19 @@ import { yasDownload } from '../data/shortcuts.js';
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
     background: linear-gradient(135deg, #059669, #047857);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .facebook-btn {
+    background: linear-gradient(135deg, #1877f2, #166fe5);
+    color: white;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+  }
+  
+  .facebook-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
+    background: linear-gradient(135deg, #166fe5, #1464d8);
     border-color: rgba(255, 255, 255, 0.2);
   }
   
