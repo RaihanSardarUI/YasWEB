@@ -81,7 +81,7 @@ export const dinstagram = {
     developer: "DInstagram Team",
 
     // URLs
-    shortcutUrl: "https://www.icloud.com/shortcuts/CommingSoon",
+    shortcutUrl: "https://www.icloud.com/shortcuts/c69a927d949b4407865ad9d20c3012db",
     websiteUrl: "https://dinstagram.pro/",
 
     // Compatibility
