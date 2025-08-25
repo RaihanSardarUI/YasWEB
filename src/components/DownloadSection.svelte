@@ -1,29 +1,5 @@
 <script>
   import Icon from '@iconify/svelte';
-  import { onMount } from 'svelte';
-  
-  onMount(() => {
-    // Load ad script for Download section
-    if (typeof window !== 'undefined') {
-      window.atOptions = {
-        'key': '826f292d2220f0443cf1b759ae9a729c',
-        'format': 'iframe',
-        'height': 250,
-        'width': 300,
-        'params': {}
-      };
-      
-      const script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = '//pregnantskipper.com/826f292d2220f0443cf1b759ae9a729c/invoke.js';
-      script.async = true;
-      
-      const adContainer = document.getElementById('download-ad-container');
-      if (adContainer) {
-        adContainer.appendChild(script);
-      }
-    }
-  });
   
   const features = [
     {
@@ -95,7 +71,7 @@
         
         <!-- Ad Banner -->
         <div class="mt-8 flex justify-center">
-          <div id="download-ad-container" class="ad-banner" style="width: 300px; height: 250px; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+          <div data-ad-container class="ad-banner" style="width: 300px; height: 250px; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
             <span style="color: #666;">Advertisement</span>
           </div>
         </div>

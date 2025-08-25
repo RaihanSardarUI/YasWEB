@@ -70,7 +70,7 @@ import { yasDownload } from '../data/shortcuts.js';
               <div class="mb-6 sm:mb-8">
                 <!-- Top Hero Ad Banner -->
                 <div class="mb-6">
-                  <div id="hero-top-ad-container" style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+                  <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
                     <span style="color: #666;">Advertisement</span>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ import { yasDownload } from '../data/shortcuts.js';
 
               <!-- Hero Ad Banner -->
               <div class="mb-6">
-                <div id="hero-ad-container" style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+                <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
                   <span style="color: #666;">Advertisement</span>
                 </div>
               </div>
@@ -171,6 +171,23 @@ import { yasDownload } from '../data/shortcuts.js';
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ads Section -->
+    <section class="py-12 bg-base-200">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+            <span style="color: #666;">Advertisement</span>
+          </div>
+          <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+            <span style="color: #666;">Advertisement</span>
+          </div>
+          <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+            <span style="color: #666;">Advertisement</span>
           </div>
         </div>
       </div>
@@ -421,22 +438,22 @@ import { yasDownload } from '../data/shortcuts.js';
             </svg>
             Get Shortcut
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
             </svg>
           </a>
         </div>
 
         <!-- Ad Banners -->
         <div class="text-center mt-8 space-y-6">
-          <div id="main-ad-container-1" style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+          <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
             <span style="color: #666;">Advertisement 1</span>
           </div>
           
-          <div id="main-ad-container-2" style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+          <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
             <span style="color: #666;">Advertisement 2</span>
           </div>
           
-          <div id="main-ad-container-3" style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
+          <div data-ad-container style="width: 300px; height: 250px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border-radius: 8px;">
             <span style="color: #666;">Advertisement 3</span>
           </div>
         </div>
