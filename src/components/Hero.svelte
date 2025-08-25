@@ -1,5 +1,6 @@
 <script>
   import Icon from '@iconify/svelte';
+  import AdBanner from './AdBanner.svelte';
   
   export let title = "YAS DOWNLOAD";
   export let subtitle = "Download iOS shortcuts and tools easily";
@@ -29,7 +30,7 @@
       </p>
       
       <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in-up" style="animation-delay: 0.6s;">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up" style="animation-delay: 0.6s;">
         <a href="/get" class="btn btn-primary btn-lg btn-glow gap-2">
           <Icon icon="heroicons:arrow-down-tray" class="w-5 h-5" />
           Download Now
@@ -38,6 +39,11 @@
           <Icon icon="heroicons:information-circle" class="w-5 h-5" />
           Learn More
         </a>
+      </div>
+      
+      <!-- Ad Banner -->
+      <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.7s;">
+        <AdBanner />
       </div>
       
       <!-- Stats -->

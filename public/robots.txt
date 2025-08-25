@@ -28,7 +28,7 @@ Disallow: /_astro/
 # Allow access to important pages
 Allow: /
 Allow: /get
-Allow: /blog
+
 Allow: /success
 Allow: /privacy-policy
 Allow: /terms-and-conditions

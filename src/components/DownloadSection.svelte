@@ -1,5 +1,6 @@
 <script>
   import Icon from '@iconify/svelte';
+  import AdBanner from './AdBanner.svelte';
   
   const features = [
     {
@@ -68,6 +69,11 @@
           <Icon icon="heroicons:arrow-down-tray" class="w-6 h-6" />
           Download YAS Now
         </a>
+        
+        <!-- Ad Banner -->
+        <div class="mt-8">
+          <AdBanner />
+        </div>
       </div>
       
       <div class="text-center animate-fade-in-up" style="animation-delay: 0.2s;">

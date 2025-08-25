@@ -30,10 +30,7 @@
           <Icon icon="heroicons:arrow-down-tray" class="w-4 h-4" />
           Get
         </a>
-        <a href="/blog" class="btn btn-ghost btn-sm gap-2">
-          <Icon icon="heroicons:document-text" class="w-4 h-4" />
-          Blog
-        </a>
+
         <a href="/privacy-policy" class="btn btn-ghost btn-sm gap-2">
           <Icon icon="heroicons:shield-check" class="w-4 h-4" />
           Privacy
