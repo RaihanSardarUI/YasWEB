@@ -1,6 +1,5 @@
 <script>
   import Icon from '@iconify/svelte';
-  import AdBanner from './AdBanner.svelte';
   
   const features = [
     {
@@ -71,8 +70,19 @@
         </a>
         
         <!-- Ad Banner -->
-        <div class="mt-8">
-          <AdBanner />
+        <div class="mt-8 flex justify-center">
+          <div class="ad-banner">
+            <script type="text/javascript">
+              atOptions = {
+                'key' : '826f292d2220f0443cf1b759ae9a729c',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script type="text/javascript" src="//pregnantskipper.com/826f292d2220f0443cf1b759ae9a729c/invoke.js"></script>
+          </div>
         </div>
       </div>
       

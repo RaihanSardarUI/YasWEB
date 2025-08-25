@@ -1,6 +1,5 @@
 <script>
   import Icon from '@iconify/svelte';
-  import AdBanner from './AdBanner.svelte';
   
   export let title = "YAS DOWNLOAD";
   export let subtitle = "Download iOS shortcuts and tools easily";
@@ -42,8 +41,19 @@
       </div>
       
       <!-- Ad Banner -->
-      <div class="mb-12 animate-fade-in-up" style="animation-delay: 0.7s;">
-        <AdBanner />
+      <div class="mb-12 animate-fade-in-up flex justify-center" style="animation-delay: 0.7s;">
+        <div class="ad-banner">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '826f292d2220f0443cf1b759ae9a729c',
+              'format' : 'iframe',
+              'height' : 250,
+              'width' : 300,
+              'params' : {}
+            };
+          </script>
+          <script type="text/javascript" src="//pregnantskipper.com/826f292d2220f0443cf1b759ae9a729c/invoke.js"></script>
+        </div>
       </div>
       
       <!-- Stats -->
